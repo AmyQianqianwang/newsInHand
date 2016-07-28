@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.newsinhand"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+ <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 允许访问SD卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序读取或写入系统设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+    <!--     <activity
+            android:name="com.example.newsinhand.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> -->
+        
+        
+         <activity
+            android:name="com.newsinhand.shownews.Welcome"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Main"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Yaowen"
+            android:label="@string/title_activity_yaowen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.China"
+            android:label="@string/title_activity_china"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Global"
+            android:label="@string/title_activity_global"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Webview"
+            android:label="@string/title_activity_newsview_1"
+            >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Sports"
+            android:label="@string/title_activity_sports"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Social"
+            android:label="@string/title_activity_social"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Newsview"
+            android:label="@string/title_activity_newsview" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.TTS"
+            android:label="@string/title_activity_tts"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Joy"
+            android:label="@string/title_activity_joy" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Finance"
+            android:label="@string/title_activity_finance" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Science"
+            android:label="@string/title_activity_science" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Travel"
+            android:label="@string/title_activity_travel" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.People"
+            android:label="@string/title_activity_people" >
+        </activity>
+         <activity
+            android:name="com.newsinhand.shownews.Body"
+            android:label="@string/title_activity_body" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Parents"
+            android:label="@string/title_activity_parents" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Life"
+            android:label="@string/title_activity_life" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Movie"
+            android:label="@string/title_activity_movie" >
+        </activity>
+        <activity
+            android:name="com.newsinhand.shownews.Pengpai"
+            android:label="@string/title_activity_pengpai" >
+        </activity>
+         <activity
+            android:name="com.newsinhand.shownews.Picture"
+            android:label="@string/title_activity_picture" >
+        </activity>
+         <activity
+            android:name="com.newsinhand.shownews.Video"
+            android:label="@string/title_activity_video" >
+        </activity>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+         android:id="@+id/localmusic_relativelayout_head"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar_bg"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/titlebutton_back_selector"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:background="@color/touming"
+            android:gravity="center_horizontal"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+s
+        <ImageButton
+            android:id="@+id/set_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="115dp"
+            android:background="@drawable/set_button_back_selector"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/localmusic_relativelayout_head"
+        android:orientation="vertical" >
+
+ <TextView
+     android:id="@+id/voice_title"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentRight="true"
+     android:layout_alignParentTop="true"
+     android:gravity="center"
+     android:text="Title"
+     android:textSize="20sp"
+     android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/voice_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/voice_title"
+        android:layout_below="@+id/voice_title"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

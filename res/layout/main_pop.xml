@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:gravity="center" android:layout_height="fill_parent"
+	android:layout_gravity="center" android:background="#00000000" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="210dp"
+    android:gravity="center" 
+    android:orientation="vertical" 
+    android:layout_gravity="center"
+    android:background="@drawable/downbutton_corner"
+    >
+  
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >   
+
+        <TextView
+            android:id="@+id/tts_luminance2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="36dp"
+            android:text="屏幕亮度:"
+            android:textColor="@color/snow"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+         <SeekBar
+            android:id="@+id/main_luminance_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tts_luminance2"
+            android:max="255"
+            android:progress="255" />
+        
+  </RelativeLayout>
+  
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@+id/main_voice_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:max="90"
+            android:progress="100"
+            android:layout_toRightOf="@+id/tts_luminance3" />
+
+        <TextView
+            android:id="@+id/tts_luminance3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="36dp"
+            android:text="朗读语速:"
+            android:textColor="@color/snow"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+  </RelativeLayout>
+ 
+ <!--  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" 
+        android:textColor="@color/snow"
+        >
+
+        <TextView
+            android:id="@+id/main_luminance1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="36dp"
+            android:text="字体大小:"
+            android:textColor="@color/snow"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/main_text_size"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/main_luminance1"
+            android:spinnerMode="dialog"
+            android:clickable="true" />
+        
+  </RelativeLayout>
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:textColor="@color/snow"
+         >
+
+        <TextView
+            android:id="@+id/main_luminance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="36dp"
+            android:text="字体颜色:"
+            android:textColor="@color/snow"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/main_text_color"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/main_luminance"
+            android:clickable="true"
+            android:spinnerMode="dialog" />
+        
+  </RelativeLayout> 
+  -->
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="40dp"
+       android:orientation="vertical"
+       android:textColor="@color/lawngreen" >
+
+       <TextView
+           android:id="@+id/tts_luminance4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="36dp"
+           android:text="数据清除:"
+           android:textColor="@color/snow"
+           android:textSize="20sp"
+           android:textStyle="bold" />
+
+   </RelativeLayout>
+
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:textColor="@color/snow"
+         >
+
+        <Spinner
+            android:id="@+id/news_sort"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/news_delete"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="166dp"
+            android:spinnerMode="dialog" />       
+        
+        <Button
+            android:id="@+id/news_delete"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/delete" />
+        
+  </RelativeLayout>
+  <!--  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+       <CheckBox
+           android:id="@+id/main_voice_stop"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:text="朗读停止"
+           android:textColor="@color/snow"
+           android:textSize="20sp"
+           android:textStyle="bold" />
+        
+  </RelativeLayout> -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+          <TextView
+           android:id="@+id/tts_luminance5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"         
+           android:layout_marginLeft="36dp"
+           android:text="退出系统:"
+           android:textColor="@color/snow"
+           android:textSize="20sp"
+           android:textStyle="bold" />
+         <Button
+             android:id="@+id/sys_out"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:background="@drawable/sys_out_red"
+             android:textColor="@color/snow"
+             android:layout_toRightOf="@+id/tts_luminance5"
+             android:layout_marginLeft="85dp" /> 
+               
+  </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

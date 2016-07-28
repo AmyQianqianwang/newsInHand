@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+      <LinearLayout
+            android:id="@+id/navgation_head"
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:background="#FFFFFF" 
+            android:layout_alignParentTop="true"
+          >
+       <FrameLayout
+          android:layout_width="fill_parent"
+          android:layout_height="160dp"
+         >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NewsInHand"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:gravity="center" >
+
+                <View
+                    android:id="@+id/v_dot0"
+                    style="@style/dot_style"
+                    android:background="@drawable/dot_focused" />
+
+                <View
+                    android:id="@+id/v_dot1"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot2"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot3"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot4"
+                    style="@style/dot_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+   </LinearLayout>
+<TabHost
+    android:id="@+id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/navgation_head"  
+    android:layout_alignParentLeft="true"
+     >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 水平滚动 -->
+
+            <HorizontalScrollView
+                android:id="@+id/h_scrollFoodType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:showDividers="none"
+                     >
+
+                </TabWidget>
+            </HorizontalScrollView>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="viewpager"
+                android:visibility="gone" >
+            </FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+
+      <LinearLayout
+          android:id="@+id/title_head"
+          android:layout_width="fill_parent"
+          android:layout_height="50dp"
+          android:layout_below="@android:id/tabcontent"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:background="@drawable/navigation_bar_bottom"
+          android:gravity="center_vertical" >
+
+          <ImageButton
+              android:id="@+id/text_open"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="30dp"
+              android:background="@drawable/main_titlebar_text"
+              android:contentDescription="@string/app_name"
+              android:paddingLeft="5dp" />
+         <ImageButton
+              android:id="@+id/pic_open"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="35dp"
+              android:background="@drawable/main_titlebar_pic"
+              android:contentDescription="@string/app_name"
+              android:paddingLeft="5dp" />
+         <ImageButton
+              android:id="@+id/vid_open"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="35dp"
+              android:background="@drawable/main_titlebar_video"
+              android:contentDescription="@string/app_name"
+              android:paddingLeft="5dp" />
+           <ImageButton
+              android:id="@+id/voice_open"
+              android:layout_width="33dp"
+              android:layout_height="33dp"
+              android:layout_marginLeft="35dp"
+              android:background="@drawable/main_titlebar_selector"
+              android:contentDescription="@string/app_name"
+              android:paddingLeft="5dp" />
+         <!--  <TextView
+              android:id="@+id/main_title_text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="88dp"
+              android:background="@color/touming"
+              android:gravity="center_horizontal"
+              android:text="新聞掌阅"
+              android:textColor="@color/skyblue"
+              android:textSize="25sp"
+              android:textStyle="bold" /> -->
+
+          <ImageButton
+              android:id="@+id/main_set_btn"
+              android:layout_width="33dp"
+              android:layout_height="33dp"
+              android:layout_marginLeft="35dp"
+              android:background="@drawable/main_title_set_selector"
+              android:contentDescription="@string/app_name"
+              android:paddingLeft="5dp" />
+      </LinearLayout>
+
+</RelativeLayout>

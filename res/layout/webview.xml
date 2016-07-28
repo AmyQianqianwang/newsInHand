@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ <LinearLayout
+        android:id="@+id/localmusic_relativelayout_head"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bar_bg"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/Web_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/titlebutton_back_selector"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/Web_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@color/touming"
+            android:gravity="center_horizontal"
+            android:text="要闻"
+            android:textColor="@color/red"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+ <WebView 
+       android:id="@+id/webview"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_below="@+id/localmusic_relativelayout_head"
+          />
+</RelativeLayout>

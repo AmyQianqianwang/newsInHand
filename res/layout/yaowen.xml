@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+        
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Yaowen">
+     <com.newsinhand.refreshnews.Refresh
+        android:id="@+id/Yaowen_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/list_divider_line"
+        android:dividerHeight="2dp"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/list_selector"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@color/silver"
+        android:scrollbarStyle="outsideInset"/>
+
+</LinearLayout>
